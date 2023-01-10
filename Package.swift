@@ -10,7 +10,7 @@ let package = Package(
     products: [
         .library(
             name: "SwiftyTelebot",
-            targets: ["telegram-vapor-bot"]),
+            targets: ["SwiftyTelebot"]),
     ],
     dependencies: [
         .package(name: "vapor", url: "https://github.com/vapor/vapor.git", .upToNextMajor(from: "4.45.0")),
