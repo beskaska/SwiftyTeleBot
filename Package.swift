@@ -3,13 +3,13 @@
 import PackageDescription
 
 let package = Package(
-    name: "telegram-vapor-bot",
+    name: "swifty-telebot",
     platforms: [
         .macOS(.v10_15)
     ],
     products: [
         .library(
-            name: "telegram-vapor-bot",
+            name: "SwiftyTelebot",
             targets: ["telegram-vapor-bot"]),
     ],
     dependencies: [
@@ -18,7 +18,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "telegram-vapor-bot",
+            name: "SwiftyTelebot",
             dependencies: [
                 .product(name: "Vapor", package: "vapor"),
                 .product(name: "SwiftRegularExpression", package: "SwiftRegularExpression"),
